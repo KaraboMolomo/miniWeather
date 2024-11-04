@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="miniWeather/miniWeather.css">
+    <title>SkyCast</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SkyCast</h1>
+        </header>
+
+        <form id="search-form">
+            <input type="text" id="search-input" class="search-input" placeholder="🔍 Search for city" />
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+        <div id="weather-display">
+            <div id="current-temperature">0°C</div>
+            <img id="weather-icon" alt="Weather Icon" style="width: 50px; vertical-align: middle;">
+            <button id="toggle-units">Convert to °F</button>
+            <div id="current-city">
+                <span class="location-icon">📍</span>
+                <span>Name of City</span>
+            </div>
+            <div id="current-date">Day, 00:00</div>
+            <div id="description">Weather Description</div>
+
+            <div class="info-box-container">
+                <div class="info-box">
+                    <div class="icon">☀️</div>
+                    <div class="title">UV Index</div>
+                    <div class="value" id="uv-index">--</div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">💧</div>
+                    <div class="title">Humidity</div>
+                    <div class="value" id="humidity">--</div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">💨</div>
+                    <div class="title">Wind (km/h)</div>
+                    <div class="value" id="wind-speed">--</div>
+                </div>
+                <div class="info-box">
+                    <div class="icon">🌅</div>
+                    <div class="title">Sunrise & Sunset</div>
+                    <div class="value" id="sunrise-sunset">--</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>This project was coded by Karabo Molomo and is on <a href="#">GitHub</a> and hosted on <a
+                    href="#">Netlify</a>.</p>
+        </footer>
+    </div>
+    </body>
+    
+    </html>
