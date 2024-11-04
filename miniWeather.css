@@ -1,0 +1,156 @@
+/* CSS Styles */
+body {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    color: #FFF;
+    background-color: #333642;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    color: #0954b6;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    background-color: #f9f7fe;
+    color: rgba(39, 33, 66, 0.4);
+    border: none;
+    font-size: 16px;
+    padding: 20px;
+    width: 70%;
+    border-radius: 6px;
+}
+
+#search-input::placeholder {
+    color: rgba(39, 33, 66, 0.4);
+}
+
+.search-button {
+    margin-left: 5px;
+    font-size: 16px;
+    background-color: #4a07f5;
+    color: white;
+    border: none;
+    padding: 20px;
+    line-height: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #4f97f5;
+}
+
+#weather-display {
+    text-align: left;
+    color: #f3efed;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+#current-temperature {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#toggle-units {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #BAB8F3;
+    color: #050505;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-units:hover {
+    background-color: #3877ff;
+}
+
+#current-city {
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
+}
+
+#current-date {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#description {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #B0E4F4;
+}
+
+.info-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-box {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(76, 76, 77, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.info-box .icon {
+    font-size: 1.5rem;
+}
+
+.info-box .title {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #BAB8F3;
+}
+
+.info-box .value {
+    color: #4C4C4D;
+}
+
+footer {
+    margin-top: 30px;
+    color: #BAB8F3;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #3071e9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
